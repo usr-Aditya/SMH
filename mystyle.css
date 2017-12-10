@@ -34,8 +34,12 @@ body {
     display: table;
     clear: both;
 }
-
-
+input{
+    border-radius: 2px;
+}
+.leftinput{
+    margin-left: 20px;
+}
 .footer {
     background-color: #f1f1f1;
     padding: 10px;
