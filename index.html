@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+<form>
+  <input type="text" name="search" placeholder="Search..">
+</form>
+
+<div class="header">
+<h1>BIOG</h1>
+  <h3>Stand against Crime we will help you in the fight!</h3>
+  <p>This is the government site where you can enter the details about crimes and other social problems in your vicinity.This will help us to understand your problems and take useful measures to overcome!</p>
+</div>
+
+<div class="row">
+  <div class="column side" style="background-color:#aaa;">
+<h1>  BIOG-details</h1>
+
+<h6>Problem Statement:</h6>
+<p>Mapping of Typical Zones (List below) in India through publically available data and directly linking them to our skill development courses. Example 7.1 Through publicly available data, we can map the crime rate/unemployment rate and the type of crime rate in different regions of India. Let’s say a district in UP ‘Saharanpur’’ has the highest rate of crime in Uttar Pradesh, we should focus more over there through our skill development initiatives Or Chandigarh Reports highest number of ATM theft cases, our security sector skill council can upskill security guards or train more of them particularly for Chandigarh. 7.2 Mapping MNREGA scheme and look alike schemes & linking it through PMKVY or different initiatives. 7.3 SMART/Skilled Region (either a district or a panchayat): if we can get information regarding the skill capacity of the person in that region (district/panchayat), we can categorize that region into a SMART/Skilled region. (it’s mapping a region with skills of persons).</p>
+
+
+
+
+
+</div>
+  <div class="column middle" style="background-color:#bbb;"><h1>Information:</h1>
+<form><h3>Select:</h3>
+	State:  <input list="States" name="States">
+  <datalist id="States">
+    <option value="Maharashtra">
+    <option value="Delhi">
+    <option value="West Bengal">
+    <option value="Andhra Pradesh">
+    <option value="Madhya Pradesh">
+  </datalist><br>
+   District: <input list="States" name="States">
+  <datalist id="States">
+    <option value="Maharashtra">
+    <option value="Delhi">
+    <option value="West Bengal">
+    <option value="Andhra Pradesh">
+    <option value="Madhya Pradesh">
+  </datalist><br>
+     Problems: <input list="problems" name="problems">
+  <datalist id="problems">
+    <option value="Crime">
+    <option value="Unemployment">
+    <option value="Other">
+    
+  </datalist><br>
+  	<input list="other" name="other" value="Other">
+  <datalist id="other">
+ 
+    <option value="Other">
+  </datalist><br>
+ 
+
+ <br>
+ 
+  <input type="button" onclick="alert('This will get the information about what measures should be taken in particular area!')" onclick="submit" value="Get Details">
+</form>
+
+
+   </div>
+  <div class="column side" style="background-color:#ccc;">
+  	<h1>Public reports:</h1>
+  	<h3>Enter your details below:</h3>
+  <form action="/action_page.php">
+  <p>First Name:<input type="text" name="firstname" ></p>
+ <p>Last Name:  <input type="text" name="lastname" ></p>
+ <p> Contact:   <input type="contact" name="firstname"></p>
+<p>E-mail:      <input type="email" name="email"></p><br>
+    State:<input list="States" name="States">
+
+  <datalist id="States">
+    <option value="Maharashtra">
+    <option value="Delhi">
+    <option value="West Bengal">
+    <option value="Andhra Pradesh">
+    <option value="Madhya Pradesh">
+  </datalist><br>
+  <br>
+ District:
+<input list="district" name="District">
+ <datalist id="district">
+    <option value="Maharashtra">
+    <option value="Delhi">
+    <option value="West Bengal">
+    <option value="Andhra Pradesh">
+    <option value="Madhya Pradesh">
+  </datalist>
+ <br><br>
+
+   Problem: <textarea name="message" rows="10" cols="30">DESCRIPTION IF ANY.</textarea>
+  <br>
+  
+  <input type="submit" value="Submit">
+</form></div>
+</div>
+
+<div class="footer">
+  <p>Made By: Team CODEBLACK!</p>
+</div>
+
+</body>
+</html>
