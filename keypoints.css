@@ -1,0 +1,44 @@
+body{
+    
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 98%;
+    height: 800px; /*temporary*/
+    background-color: aliceblue;
+    margin: 0%;
+    padding: 1%;
+    
+}
+/* The three divisions, zone, smart_area and schemes should display side by side*/
+.innerDiv{
+    float: left;
+    width: 31.3%; 
+    height: 60%; /*Temporary*/
+    padding: 1%;
+}
+#zone{ 
+    background-color: beige;
+}
+#smart_area{
+    background-color: firebrick;
+}
+#schemes{
+    background-color: beige;
+}
+/*Background color scheme of three divisions:
+    light-dark-light
+*/
+#main_heading{
+    color: darkred;
+    font-size: 40px;
+    text-align: center;
+}
+.innerHead{
+    text-align: center;
+    font-size: 30px;
+}
+.para{
+    text-indent: 50px;
+}
