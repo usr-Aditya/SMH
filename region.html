@@ -1,0 +1,91 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>BIOG Data</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    
+    <meta name="viewport" content="width=device-width,height=device-height initial-scale=1,maximum-scale=1">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="region.css">
+
+</head>
+
+<body>
+    <!--Uppermost Div Containing Everything-->
+    <div class="o_container">
+        <div class="m_container">
+            <!--A Wrapper Div for padding-->
+            <div id="path_diagram">
+                <!--This Diviiosn SHows a path for current page, thus anyone can go to the desired page in a single click-->
+                <span id="path">Path:<br></span>
+                <button type="button" class="btn btn-info my_button">Login</button> ->
+                <button type="button" class="btn btn-info my_button">English</button> ->
+                <button type="button" class="btn btn-info my_button">Region</button>
+            </div>
+            <!--End "path_diagram-->
+
+
+            <div id="data">
+                <!--All the data will be contained in this div-->
+
+                <div id="navbar">
+                    <p id="main_head">
+                        <!--<a href="#">Maharashtra</a>-->Region
+                        <span class="my_marker">&#x25BA;</span>
+                    </p>
+
+                    <p class="sub_main">Andhra Pradesh<span class="my_marker">&#x25BA;</span> </p>
+                    <p class="sub_main">Arunachal Pradesh<span class="my_marker">&#x25BA;</span> </p>
+                    <p class="sub_main">Assam<span class="my_marker">&#x25BA;</span> </p>
+                    <p class="sub_main">Bihar<span class="my_marker">&#x25BA;</span> </p>
+                    <p class="sub_main">Chattisgarh<span class="my_marker">&#x25BA;</span> </p>
+                    <p class="sub_main">Goa<span class="my_marker">&#x25BA;</span> </p>
+                    <p class="sub_main">Gujrat<span class="my_marker">&#x25BA;</span> </p>
+                    <p class="sub_main">Haryana<span class="my_marker">&#x25BA;</span> </p>
+                    <p class="sub_main">Himachal Pradesh<span class="my_marker">&#x25BA;</span> </p>
+                    <p class="sub_main">Jammu & Kashmir<span class="my_marker">&#x25BA;</span> </p>
+                    <p class="sub_main">Jharkhand<span class="my_marker">&#x25BA;</span> </p>
+                    <p class="sub_main">Karnataka<span class="my_marker">&#x25BA;</span> </p>
+                    <p class="sub_main">Kerela<span class="my_marker">&#x25BA;</span> </p>
+                    <p class="sub_main">Madhya Pradesh<span class="my_marker">&#x25BA;</span> </p>
+                    <p class="sub_main">Maharashtra<span class="my_marker">&#x25BA;</span> </p>
+                    <p class="sub_main">Manipur<span class="my_marker">&#x25BA;</span> </p>
+                    <p class="sub_main">Meghalaya<span class="my_marker">&#x25BA;</span> </p>
+                    <p class="sub_main">Mizoram<span class="my_marker">&#x25BA;</span> </p>
+                    <p class="sub_main">Nagaland<span class="my_marker">&#x25BA;</span> </p>
+                    <!--And Etc.-->
+
+                </div>
+                <!--end "navbar"-->
+
+                <div id="graphs_and_stuff">
+                    <!--This Div contains all details about selected thing-->
+                    <h1>Maharashtra (as a whole):</h1>
+                    <img height="420" width="530" id="table_img" src="images/table.png">
+                    <img height="420" width="530" id="pie" src="images/pie.png">
+
+
+                    <span id="span_butt">
+                        <!--This span just to allign button in center-->
+                    <div id="scheme">
+                        <!--This div shows schemes-->
+                        <button class="btn my_sub_butt">Show Best Scheme(s) for this region</button>
+                    </div><!--End "scheme-->
+                    </span><!--End "span_butt-->
+                </div>
+                <!--End "graphs_and_stuff"-->
+
+            </div>
+            <!--End "data"-->
+
+        </div>
+        <!--End "m_container"-->
+    </div>
+    <!--End "o_container" div-->
+</body>
+
+</html>
