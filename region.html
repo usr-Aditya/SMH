@@ -11,7 +11,52 @@
     <link rel="shortcut icon" href="images/favicon.png">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="region.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+    <script>
+        
+        function init(){
+            maha = document.getElementById("maha");
+            maha.onclick = mahaClick;
+        }
+        
+        function mahaClick(obj){
+            d = obj.target;
+            /*alert(d.offsetLeft + " " + d.offsetTop);*/
+            md = document.getElementById("mahaDiv");
+            md.style.left = d.offsetLeft + d.offsetWidth +  15 + "px";
+            md.style.top = d.offsetTop - md.offsetHeight + d.offsetHeight + "px";
+            md.style.visibility = "visible";
+            d.style.backgroundColor = "aquamarine";
+            
+            nag = document.getElementById("nagp");
+            nag.onclick = nagClick;
+        }
+        
+        function nagClick(obj){
+            /*alert("nagpur")*/
+            n = obj.target;
+            
+            md = document.getElementById("mahaDiv")
+            nd = document.getElementById("nagDiv")
+                
+            left = md.offsetLeft + md.offsetWidth + 7;
+            width = n.offsetWidth;
+            height = n.offsetHeight;
+            top1 = md.offsetTop + n.offsetTop - nd.offsetHeight + n.offsetHeight;
+            /*alert(md.offsetTop)*/
+            
+            
+            nd.style.left = left + "px";
+            nd.style.top =  top1 +  "px";
+            nd.style.visibility = "visible";
+            n.style.backgroundColor = "aquamarine";
+            
+        }
+        
+        window.onload = init;
+    </script>
+    
 </head>
 
 <body>
@@ -24,7 +69,7 @@
                 <span id="path">Path:<br></span>
                 <button type="button" class="btn btn-info my_button">Login</button> ->
                 <button type="button" class="btn btn-info my_button">English</button> ->
-                <button type="button" class="btn btn-info my_button">Region</button>
+                <button type="button" class="btn btn-info my_button">Zone</button>
             </div>
             <!--End "path_diagram-->
 
@@ -34,7 +79,7 @@
 
                 <div id="navbar">
                     <p id="main_head">
-                        <!--<a href="#">Maharashtra</a>-->Region
+                        <!--<a href="#">Maharashtra</a>-->Select Zone
                         <span class="my_marker">&#x25BA;</span>
                     </p>
 
@@ -52,7 +97,8 @@
                     <p class="sub_main">Karnataka<span class="my_marker">&#x25BA;</span> </p>
                     <p class="sub_main">Kerela<span class="my_marker">&#x25BA;</span> </p>
                     <p class="sub_main">Madhya Pradesh<span class="my_marker">&#x25BA;</span> </p>
-                    <p class="sub_main">Maharashtra<span class="my_marker">&#x25BA;</span> </p>
+                    <p id="maha" class="sub_main">Maharashtra<span class="my_marker">&#x25BA;</span> </p>
+                    
                     <p class="sub_main">Manipur<span class="my_marker">&#x25BA;</span> </p>
                     <p class="sub_main">Meghalaya<span class="my_marker">&#x25BA;</span> </p>
                     <p class="sub_main">Mizoram<span class="my_marker">&#x25BA;</span> </p>
@@ -64,24 +110,41 @@
 
                 <div id="graphs_and_stuff">
                     <!--This Div contains all details about selected thing-->
-                    <h1>Maharashtra (as a whole):</h1>
-                    <img height="420" width="530" id="table_img" src="images/table.png">
-                    <img height="420" width="530" id="pie" src="images/pie.png">
-
-
-                    <span id="span_butt">
-                        <!--This span just to allign button in center-->
-                    <div id="scheme">
-                        <!--This div shows schemes-->
-                        <button class="btn my_sub_butt">Show Best Scheme(s) for this region</button>
-                    </div><!--End "scheme-->
-                    </span><!--End "span_butt-->
+                    <h1>What is a "Zone"? or Coming Soon</h1>
+                    <h4>So? Whats's Here? Content? or Coming Soon?</h4>
+                    <p class="content_para">This is just a generic para. These words are just added so that this paragraph goes in second line or to fill up the page with words or, idk, just without any reason. But one thing i do know</p>
+                    
+                    <p class="content_para">Is that, the more you use a lighter, the more it becomes lighter. Woah!. Mind got blown? Haven't it? Anyways, there's no need to put any more words here, so, ciao.. </p>
+                    
+                    
                 </div>
                 <!--End "graphs_and_stuff"-->
 
             </div>
             <!--End "data"-->
-
+            
+            <!--Just a temporary div, for the sake of this prototype-->
+            <div id="mahaDiv">
+                <p class="sub_sub_main">Maharashtra (Whole)<!--<span class="my_marker">&#x25BA;</span>--> </p>
+                <p class="sub_sub_main">Amravati<span class="my_marker">&#x25BA;</span> </p>
+                <p class="sub_sub_main">Aurangabad<span class="my_marker">&#x25BA;</span> </p>
+                <p class="sub_sub_main">Konkan<span class="my_marker">&#x25BA;</span> </p>
+                <p id="nagp" class="sub_sub_main">Nagpur<span class="my_marker">&#x25BA;</span> </p>
+                <p class="sub_sub_main">Nashik<span class="my_marker">&#x25BA;</span> </p>
+                <p class="sub_sub_main">Pune<span class="my_marker">&#x25BA;</span> </p>
+            </div>
+            
+            
+            <div id="nagDiv">
+                <p class="sub_sub_main">Nagpur (Whole)</p>
+                <p class="sub_sub_main">Bhandara</p>
+                <p class="sub_sub_main">Chandanpur</p>
+                <p class="sub_sub_main">Gadchiroli</p>
+                <p class="sub_sub_main">Gondia</p>
+                <p class="sub_sub_main">Nagpur</p>
+                <p class="sub_sub_main">Wardha</p>
+            </div>
+            
         </div>
         <!--End "m_container"-->
     </div>

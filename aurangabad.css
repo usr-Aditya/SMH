@@ -100,43 +100,28 @@ p.sub_main:hover {
 }
 
 h1 {
-    font-size: 26pt;
+    font-size: 30pt;
     text-align: center;
     text-decoration: underline;
 }
-
-.content_para{
-    text-indent: 30px;
-    font-size: 15pt;
+#things{
+    width: 100%;
+    /*border: 2px solid black;*/
+    /*padding-left: 10%;
+    padding-right: 10%;*/
 }
-
-#mahaDiv{
-    position: absolute;
+.option{
+    float: left;
+    width: 25%;
+    margin-top: 3%;
+    margin-left: 15%;
+    padding: 1% 3%;
     border: 2px solid black;
-    visibility: hidden;
-    width: 14%; 
-    border-radius: 7px;
-    padding: 0.5%;
+    text-align: center;
+    font-size: 16pt;
+    border-radius: 20px;
+    background-color: rgb(234, 245, 255);
 }
-.sub_sub_main{
-    margin-left: 1%;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 2px;
-    font-size: 13pt;
-    font-weight: 600;
-    background-color: aliceblue;
-    margin-bottom: 3px;
-    text-indent: 10px;
-}
-#nagDiv{
-    position: absolute;
-    border: 2px solid black;
-    visibility: hidden;
-    width: 14%; 
-    border-radius: 7px;
-    padding: 0.5%;
-}
-.sub_sub_main:hover{
-    background-color: aquamarine;
+.option:hover{
+    background-color: #bed2e5;
 }
